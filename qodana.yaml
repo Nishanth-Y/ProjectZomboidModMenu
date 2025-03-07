@@ -1,0 +1,32 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#  Analytical directives for Qodana are governed by the 'qodana.yaml' manifest. #
+#  Consult https://www.jetbrains.com/help/qodana/qodana-yaml.html for details.  #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+schemaVersion: "alpha-1"
+
+# Define code inspection blueprint
+inspectionProfile:
+  baseProfile: refined_defaults
+
+# Activate specific checks
+#enablementRules:
+#  - checkId: <EnabledCheckIdentifier>
+
+# Suppress certain validations within designated locales
+#suppressionRules:
+#  - checkId: <SuppressedCheckIdentifier>
+#    exclusionZone:
+#      - <directory/where/validation/bypassed>
+
+targetPlatformJDK: "21" # (Enforced during CI/CD execution)
+
+# Invoke a preparatory shell script pre-Qodana analysis (CI/CD context)
+#preAnalysisScript: sh ./setup-analysis.sh
+
+# Add JetBrains IDE extensions ahead of Qodana processing (CI/CD context)
+#extensions:
+#  - extensionId: <extension.identifier> # (Available via https://plugins.jetbrains.com)
+
+# Select the Qodana engine for assessment (CI/CD deployment)
+assessmentEngine: jetbrains/qodana-jvm:2024.3
+

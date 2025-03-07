@@ -1,0 +1,72 @@
+# Global ignores (usually a good idea)
+.DS_Store          # macOS metadata files
+
+# Gradle-specific
+.gradle/          # Gradle's cache and daemon directories
+build/             # Build output directory
+gradle/wrapper/gradle-wrapper.jar  # Specific wrapper file, but keep the directory
+gradle-app.setting    #Local settings
+
+# Kotlin-specific (if applicable)
+*.kotlin_module
+
+# IntelliJ IDEA
+.idea/              # Project settings, but exclude specific sensitive files
+.idea/workspace.xml # User-specific workspace settings (often contains personal info)
+.idea/tasks.xml     # Task configuration
+.idea/usageStatistics.xml # User statistics
+.idea/dictionaries    # Custom dictionaries
+*.iml                # Module files
+*.ipr                # Project file (less common, but still possible)
+out/                 # IntelliJ's default output directory
+
+# Eclipse (Less common now, but good to have)
+.classpath         # Project classpath definition
+.project           # Project metadata
+.settings/          # Eclipse settings directory
+
+# NetBeans (Rare, but complete coverage is good)
+nbproject/private/ # Private project data
+nbbuild/           # Build output
+dist/              # Distribution directory
+nbdist/            # NetBeans distribution directory
+
+# VS Code (Increasingly common)
+.vscode/            # VS Code configuration
+
+# OS-specific trash and temp files
+Thumbs.db          # Windows thumbnail cache
+ehthumbs.db        # Windows extended thumbnail cache
+$RECYCLE.BIN/      # Windows Recycle Bin
+*.swp              # Vim swap files
+*.swo              # Vim swap files
+*.bak              # Backup files
+*~                 # Generic backup files
+*.tmp              # Generic temporary files
+
+# Log files (Often useful to exclude)
+*.log
+
+# Compiled class files (Redundant with build/ but safer to have)
+*.class
+
+# Packaging (Useful to exclude)
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Security-sensitive (Very Important)
+*.keystore         # Keystore files (private keys)
+*.p12              # PKCS12 files (certificates and keys)
+
+#Dependency files
+*.swp
+*.swo
+~*.*
+\#*\#
+.*~
+.DS_Store
+
