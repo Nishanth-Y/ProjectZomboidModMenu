@@ -1,4 +1,4 @@
-# ⭐️ Project Zomboid: Mod Menu & Free Еxplоit | Admin Access, Spawn Items, Control Player ⭐️
+# ⭐️ Project Zomboid: Cheat Menu & Free Hack | Admin Access, Spawn Items, Control Player ⭐️
 ---
 
 <div align="center">
